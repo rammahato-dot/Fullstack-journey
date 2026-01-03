@@ -1,4 +1,4 @@
-//Array Methods
+// Array Methods
 // 1. MAP
 
 // let num = [1, 2, 3, 4];
@@ -122,7 +122,7 @@
 // REST -> Allows a function to take an indefinite of arguments and buddle them in an array
 
 // function sum(...args) {
-//arguments
+// arguments
 //   for (let i = 0; i < args.length; i++) {
 //     console.log("you gave us: ", args[i]);
 //   }
@@ -150,3 +150,43 @@
 // };
 
 // let { username: user, password: secret } = student;
+
+// PRACTICE QUESTIONS
+
+// Q1. Square and sum the array elements using the arrow function and then find the average of the array
+
+// let nums = [1, 2, 3, 4, 5];
+
+// const square = nums.map((num) => num * num);
+// console.log(square);
+
+// let sum = square.reduce((acc, cur) => acc + cur, 0);
+
+// let avg = sum / nums.length;
+// console.log(avg);
+
+// Q2. Create a new array using the map function whose each element is equal to the original element plus 5.
+
+// let numbers = [1, 2, 3, 4, 5];
+// console.log(numbers.map((number) => number + 5));
+
+// Q3. Create a new array whose elements are in uppercase of words present in the original array.
+
+// let strings = ["adam", "bob", "joy", "steve", "eve"];
+// console.log(strings.map((string) => string.toUpperCase()));
+
+// Q4. Write a function called doubleAndReturnArgs which accepts an array and a variable number of arguments. The function should return a new array with the original array values and all of the additional arguments doubled.
+
+// const doubleAndReturnArgs = (arr, ...args) => [
+//   ...arr,
+//   ...args.map((v) => v * 2),
+// ];
+
+// doubleAndReturnArgs([1, 2, 3], 4, 4);
+// doubleAndReturnArgs([12], 10, 4);
+
+// Q5. Write a function called mergeObjects that accepts two objects and returns a new object which contains all the keys and values of the first object and second object.
+
+// const mergeObjects = (obj1, obj2) => ({ ...obj1, ...obj2 });
+
+// mergeObjects({ a: 1, b: 2 }, { c: 3, d: 4 });
