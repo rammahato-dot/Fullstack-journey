@@ -122,7 +122,7 @@
 // REST -> Allows a function to take an indefinite of arguments and buddle them in an array
 
 // function sum(...args) {
-  //arguments
+//arguments
 //   for (let i = 0; i < args.length; i++) {
 //     console.log("you gave us: ", args[i]);
 //   }
@@ -132,3 +132,21 @@
 //   return args.reduce((sum, el) => sum + el);
 // }
 
+// Destructuring -> Storing values of array into multiple variables
+
+// let names = ["tony", "bruce", "steve", "peter"];
+// let [winner, runnerup, ...others] = names;
+// console.log(winner, runnerup, others);
+
+// destructuring (objects)
+
+// const student = {
+//   name: "karan",
+//   age: 19,
+//   class: 12,
+//   subjects: ["english", "nepali", "math", "science"],
+//   username: "karan@123",
+//   password: "abcd",
+// };
+
+// let { username: user, password: secret } = student;
