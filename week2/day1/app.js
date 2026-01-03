@@ -121,9 +121,14 @@
 
 // REST -> Allows a function to take an indefinite of arguments and buddle them in an array
 
-function sum(...args) {
+// function sum(...args) {
   //arguments
-  for (let i = 0; i < args.length; i++) {
-    console.log("you gave us: ", args[i]);
-  }
-}
+//   for (let i = 0; i < args.length; i++) {
+//     console.log("you gave us: ", args[i]);
+//   }
+// }
+
+// function sum(...args) {
+//   return args.reduce((sum, el) => sum + el);
+// }
+
