@@ -1,4 +1,11 @@
-body {
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+
+/* body {
   font-family: Arial;
 }
 
@@ -25,4 +32,4 @@ body {
 
 #description {
   background-color: antiquewhite;
-}
+} */
