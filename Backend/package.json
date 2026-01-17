@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "This is my first project",
+  "keywords": [
+    "random",
+    "words",
+    "generate"
+  ],
+  "license": "ISC",
+  "author": "Ram Mahato",
+  "types": "commonjs",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "random-words": "^2.0.1"
+  }
+}
