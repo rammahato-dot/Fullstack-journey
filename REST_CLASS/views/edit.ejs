@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <h2>Edit your post</h2>
-    <p>Post id : <%= post.id %></p>
-    <p>Post username :@<%= post.username %></p>
+    <h1>Edit Your Post</h1>
     <form method="post" action="/posts/<%=post.id%>?_method=PATCH">
-      <textarea rows="10" cols="35" name="content"><%= post.content %></textarea>
-      <br />
-      <button>Submit</button>
+      <p><strong>Post ID:</strong> <%= post.id %></p>
+      <p><strong>Username:</strong> @<%= post.username %></p>
+      <textarea rows="10" name="content"><%= post.content %></textarea>
+      <button type="submit">Save Changes</button>
     </form>
+    <div style="text-align: center;">
+      <a href="/posts/<%= post.id %>">Cancel</a>
+    </div>
   </body>
 </html>

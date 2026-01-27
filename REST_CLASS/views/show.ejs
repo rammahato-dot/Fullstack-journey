@@ -3,15 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Post in Details</title>
-        <link rel="stylesheet" href="/style.css">
+    <title>Post Details</title>
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <h2>Here is your post in detail</h2>
-    <p>Post id : <%=post.id %></p>
-    <div class="post">
-      <h3 class="user">@ <%= post.username%></h3>
-      <h4><%=post.content%></h4>
+    <h1>Post Details</h1>
+    <div style="max-width: 700px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px;">
+      <p><strong>Post ID:</strong> <%=post.id %></p>
+      <div class="post">
+        <h3 class="user">@<%= post.username%></h3>
+        <p class="content"><%=post.content%></p>
+      </div>
+      <div style="text-align: center; margin-top: 20px;">
+        <a href="/posts/<%=post.id%>/edit" style="margin-right: 10px;">Edit</a>
+        <form method="post" action="/posts/<%=post.id%>?_method=DELETE" style="display: inline;">
+          <button type="submit" onclick="return confirm('Are you sure?')" style="padding: 5px 10px;">Delete</button>
+        </form>
+        <a href="/posts" style="margin-left: 10px;">Back to Posts</a>
+      </div>
     </div>
   </body>
 </html>
