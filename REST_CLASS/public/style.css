@@ -1,25 +1,22 @@
-/* Post container */
 .post {
-    background-color: rgb(192, 5, 5);     /* deep maroon background */
-    color: #fdfdfd;               /* light text for readability */
-    border: 1px solid #eb4040;    /* slightly darker maroon border */
-    border-radius: 6px;
-    padding: 16px;
-    margin: 20px auto;
-    max-width: 700px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  background-color: rgb(192, 5, 5);
+  color: #fdfdfd;
+  border: 1px solid #eb4040;
+  border-radius: 6px;
+  padding: 16px;
+  margin: 20px auto;
+  max-width: 700px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* User info */
 .user {
-    font-weight: 600;
-    color: #ffe4e1;               /* soft pinkish tone against maroon */
-    margin-bottom: 8px;
+  font-weight: 600;
+  color: #ffe4e1;
+  margin-bottom: 8px;
 }
 
-/* Post content */
 .post-content {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #fff;                  /* pure white for clarity */
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #fff;
 }
