@@ -25,3 +25,5 @@ let getrandomuser = () => {
     password: faker.internet.password(),
   };
 };
+
+console.log(getrandomuser());
