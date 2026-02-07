@@ -27,3 +27,4 @@ let getrandomuser = () => {
 };
 
 console.log(getrandomuser());
+console.log(getrandomuser());
